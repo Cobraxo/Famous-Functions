@@ -1,8 +1,8 @@
 /***
 Function that looks for a character in a string:
 If it found it
-	returns a pointer to the character, ,
-otherwise it returns NULL
+	returns a pointer to the character,
+otherwise it returns NULL.
 ***/
 
 #include <stdio.h>
