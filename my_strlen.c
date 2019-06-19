@@ -9,8 +9,8 @@ char *my_strncpy(char *dest, const char *src, size_t n) {
 
 int main(void) {
 
-    char str[14];
-    my_strncpy(str, "Hello World !\0", 14);
+    char str[13];
+    my_strncpy(str, "Hello World !", 13);
     printf("%s\n", str);
     return 0;
 
