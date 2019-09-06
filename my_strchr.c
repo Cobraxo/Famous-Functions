@@ -1,12 +1,21 @@
 /***
-Function that looks for a character in a string:
-If it found it
-        returns a pointer to the character,
-otherwise it returns NULL
+
+Name = my_strchr.c
+Author = Cobraxo
+Date = ??/??/2019
+
+download:
+    git clone https://github.com/Cobraxo/Famous-Functions.git
+ 
+compile:
+    gcc -Wall -Werror -Wextra _lib.h my_strchr.c -o strchr
+
+Find the char ! :P
+
 ***/
 
-#include <stdio.h>
-#define TRUE 1
+
+#include "_lib.h"
 
 char *my_strchr(const char *s, int c) {
         while(TRUE) {
