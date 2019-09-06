@@ -1,4 +1,20 @@
-#include <stdio.h>
+/***
+
+Name = my_strncpy.c
+Author = Cobraxo
+Date = ??/??/2019
+
+download:
+    git clone https://github.com/Cobraxo/Famous-Functions.git
+ 
+compile:
+    gcc -Wall -Werror -Wextra _lib.h my_strncpy.c -o strncpy
+
+Try it ! :P
+
+***/
+
+#include "_lib.h"
 
 char *my_strncpy(char *dest, const char *src, size_t n) {
 
