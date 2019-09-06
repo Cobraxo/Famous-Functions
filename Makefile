@@ -13,4 +13,3 @@ main: $(CHEADER) $(CFILES) $(ASM)
 	nasm -f elf64 $(ASM) -o $(OFILE)
 	gcc $(FLAGS) -include $(CHEADER) $(CFILES) $(OFILE) -o $@
 	echo "Finish !"
-  
