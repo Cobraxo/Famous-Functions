@@ -20,6 +20,9 @@ Enjoy ! :P
 
 int my_putc(int c, FILE *stream) {
 
+    if (!c && !stream && errno)
+        return EOF;
+
     // output : 0 stdint, 1 stdout, 2 stderr
     char fd;
 
@@ -33,7 +36,7 @@ int my_putc(int c, FILE *stream) {
         fd = 2;
 
     else 
-        return -1;
+        return EOF;
     
     (void)my_write(fd, &c, 1);
 
