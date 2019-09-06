@@ -9,7 +9,7 @@ download:
  
 compile:
     nasm -f elf64 sys_write.asm -o sys_write.o
-    gcc -Wall -Werror -Wextra put.c sys_write.o -o put
+    gcc -Wall -Werror -Wextra _lib.h put.c sys_write.o -o put
 
 Enjoy ! :P
 
@@ -17,8 +17,7 @@ Enjoy ! :P
 
 
 // For strlen() function
-#include <string.h>
-#include <stdio.h>
+#include "_lib.h"
 
 
 // In sys_write.asm file
